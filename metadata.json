@@ -1,0 +1,6 @@
+{
+  "name": "Paket Express: Subway Runner 3D",
+  "description": "Game lari 3D seru ala Subway Surfers sebagai kurir paket kota. Ambil paket di jalan, lompati rintangan, kumpulkan koin, dan antarkan ke toko tujuan!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

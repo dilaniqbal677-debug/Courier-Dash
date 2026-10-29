@@ -1,0 +1,6 @@
+{
+  "summary":  "Refactoring arsitektur dan modularisasi codebase berhasil diselesaikan secara menyeluruh. Seluruh file gemuk (>1.000–1.770 baris) telah dipecah ke dalam nested folder fungsional berbobot (shop, hud, overlays, controls, collision, particles, boss) dan lolos validasi 'bun tsc --noEmit' dengan 0 error.",
+  "updatedAt":  "2026-10-29T04:32:17.650637237Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}

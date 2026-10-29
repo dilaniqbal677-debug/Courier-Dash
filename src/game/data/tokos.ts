@@ -1,0 +1,112 @@
+import { ElectronicType, ElectronicComponentInfo, TokoTarget } from '../../types/game';
+
+export const ELECTRONIC_COMPONENTS: Record<ElectronicType, ElectronicComponentInfo> = {
+  gpu: {
+    type: 'gpu',
+    name: 'VGA RTX 4090 OC',
+    subname: 'NVIDIA GeForce 24GB GDDR6X',
+    brand: 'ASUS ROG / HND',
+    color: '#10b981',
+    accentColor: '#34d399',
+    icon: '⚡',
+    scoreVal: 350,
+  },
+  laptop: {
+    type: 'laptop',
+    name: 'Laptop Gaming ROG Strix',
+    subname: 'Intel Core i9 14900HX • 32GB RAM',
+    brand: 'ASUS / HND',
+    color: '#0ea5e9',
+    accentColor: '#38bdf8',
+    icon: '💻',
+    scoreVal: 400,
+  },
+  motherboard: {
+    type: 'motherboard',
+    name: 'Mainboard TUF Z790-PLUS',
+    subname: 'PCIe 5.0 • WiFi 6E • DDR5',
+    brand: 'ASUS TUF',
+    color: '#f59e0b',
+    accentColor: '#fbbf24',
+    icon: '🔲',
+    scoreVal: 300,
+  },
+  monitor: {
+    type: 'monitor',
+    name: 'Monitor Gaming 240Hz 2K',
+    subname: 'Curved Ultra-Wide 1ms HDR',
+    brand: 'HND Gaming Pro',
+    color: '#a855f7',
+    accentColor: '#c084fc',
+    icon: '🖥️',
+    scoreVal: 350,
+  },
+};
+
+export const TOKO_LIST: TokoTarget[] = [
+  {
+    name: 'HND COMPUTER',
+    category: 'Pusat Laptop & PC - Ince Nurdin',
+    color: '#0f172a',
+    accentColor: '#38bdf8',
+    baseReward: 35000,
+    packagesRequired: 3,
+    requestedManifest: {
+      laptop: 2,
+      gpu: 1,
+    },
+  },
+  {
+    name: 'HND COMPUTER',
+    category: 'Service Center & Sparepart Hardware',
+    color: '#1e293b',
+    accentColor: '#06b6d4',
+    baseReward: 45000,
+    packagesRequired: 4,
+    requestedManifest: {
+      motherboard: 2,
+      gpu: 1,
+      monitor: 1,
+    },
+  },
+  {
+    name: 'HND COMPUTER',
+    category: 'Gaming Zone & PC Build Custom',
+    color: '#090d16',
+    accentColor: '#ef4444',
+    baseReward: 55000,
+    packagesRequired: 5,
+    requestedManifest: {
+      gpu: 2,
+      monitor: 2,
+      motherboard: 1,
+    },
+  },
+  {
+    name: 'HND COMPUTER',
+    category: 'Authorized Distributor & Aksesoris',
+    color: '#0f172a',
+    accentColor: '#10b981',
+    baseReward: 65000,
+    packagesRequired: 4,
+    requestedManifest: {
+      laptop: 2,
+      monitor: 1,
+      motherboard: 1,
+    },
+  },
+  {
+    name: 'HND COMPUTER',
+    category: 'Gudang Logistik & Express Delivery',
+    color: '#181f2b',
+    accentColor: '#f59e0b',
+    baseReward: 80000,
+    packagesRequired: 6,
+    requestedManifest: {
+      gpu: 2,
+      laptop: 2,
+      motherboard: 1,
+      monitor: 1,
+    },
+  },
+];

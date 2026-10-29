@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "Score": {
+      "title": "Score",
+      "description": "High score entry for the courier game.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "The UID of the user." },
+        "username": { "type": "string", "description": "Display name of the user." },
+        "score": { "type": "number", "description": "The high score achieved." },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Timestamp when score was achieved." }
+      },
+      "required": ["userId", "username", "score", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/scores/{scoreId}": {
+      "schema": { "$ref": "Score" },
+      "description": "Global leaderboard scores collection."
+    }
+  }
+}
